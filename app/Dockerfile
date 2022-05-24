@@ -1,8 +1,8 @@
 FROM node:12.13-alpine As development
 
-WORKDIR /Users/cgangaro/Documents/transcendence_perso/app
+WORKDIR ./
 
-COPY package*.json ./
+COPY ./package*.json ./
 
 RUN npm install --only=development
 
@@ -15,14 +15,14 @@ FROM node:12.13-alpine as production
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
-WORKDIR /usr/src/app
+# WORKDIR ./
 
-COPY package*.json ./
+# COPY package*.json ./
 
-RUN npm install --only=production
+# RUN npm install --only=production
 
-COPY . .
+# COPY . .
 
-COPY --from=development /Users/cgangaro/Documents/transcendence_perso/app/dist ./dist
+COPY --from=development /dist ./dist
 
 CMD ["node", "dist/main"]
