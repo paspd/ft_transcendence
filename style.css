@@ -1,0 +1,111 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+body{
+	background: #f5dd90;
+}
+
+.horizontal {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.vertical {
+	height: 100%;
+	display: flex;
+	margin: 1%;
+}
+
+.nav{
+	background: #324376;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 50%;
+	font-size: 75px;
+	list-style-type: none;
+	margin-right: 1%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.bell {
+	font-size: 50px;
+}
+
+nav .bi:hover{
+	transition: all 0.5s ease-out;
+	color: black;
+}
+
+nav li{
+	display: inline;
+}
+
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+main{
+	background: #FFF;
+	display: flex;
+	width: 70%;
+	height: inherit;
+}
+
+.win-lose {
+	background: #F1F1F1;
+	margin: 1%;
+	width: 50%;
+	max-height: inherit;
+}
+
+.stat {
+	margin: 1% 1% 1% 0;
+	width: 50%;
+	max-height: inherit;
+	
+}
+
+.rank {
+	height: 49.5%;
+	background: #F1F1F1;
+	margin-bottom: 1%;
+}
+
+.graph {
+	height: 49.5%;
+	background: #F1F1F1;
+}
+
+.info {
+	background: #FFF;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin-left: 1%;
+	height: inherit;
+}
+
+.user-info {
+	background: #F1F1F1;
+	height: 13%;	
+}
+
+.friends-info {
+	background: black;
+	height: 82%;
+}
+
+.chat {
+	background: red;
+	height: 5%;
+}
