@@ -5,9 +5,10 @@ import { Socket, Server } from 'socket.io';
 @WebSocketGateway()
 export class AppGateway implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect{
 
-  //@WebSocketServer() wss: Server;
+  @WebSocketServer() server: Server;
 
   private logger: Logger = new Logger('AppGateway');
+
   afterInit(server: Server) { //OnGatewayInit
     this.logger.log('Init');
   }
@@ -21,8 +22,8 @@ export class AppGateway implements OnGatewayInit, OnGatewayConnection, OnGateway
   }
 
   @SubscribeMessage('msgToServer')
-  handleMessage(client: Socket, text: string): WsResponse<string> {
-    // client.emit('msgToCLient', text); //same 
-    return { event: 'msgToClient', data: text };
+  handleMessage(client: Socket, text: string): void {
+    this.server.emit('msgToCLient', text, client.id);
+    // return { event: 'msgToClient', data: text };//same, add WsResponse<string>
   }
 }
