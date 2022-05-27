@@ -1,0 +1,20 @@
+* {
+    font-family: Arial;
+
+    --first-color: #324376;
+    --second-color: #586BA4;
+    --third-color: #F5DD90;
+    --fourth-color: #F68E5F;
+    --fifth-color: #F76C5E;
+
+    --primary-bg-color: var(--first-color);
+    --second-bg-color: var(--second-color);
+    --primary-text-color: var(--third-color);
+    
+    --navbar-primary-bg-color: var(--primary-bg-color);
+    --navbar-second-bg-color: var(--second-bg-color);
+    --navbar-primary-text-color: var(--primary-text-color);
+
+    --home-btn-login-bg-color: var(--third-color);
+    --home-btn-login-text-color: black;
+}

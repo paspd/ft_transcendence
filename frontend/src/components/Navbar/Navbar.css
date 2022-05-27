@@ -1,0 +1,55 @@
+@import '../styles/theme.css';
+
+.navigation {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: var(--navbar-primary-bg-color);
+    align-items: center;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: var(--navbar-primary-text-color);
+}
+
+.brand-name:hover {
+    background-color: var(--navbar-second-bg-color);
+}
+
+.navigation-menu {
+    margin-left: auto;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+.navigation-menu ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+}
+
+.navigation-menu li:hover {
+    background-color: var(--navbar-second-bg-color);
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    color: var(--navbar-primary-text-color);
+    padding: 1rem;
+}
+

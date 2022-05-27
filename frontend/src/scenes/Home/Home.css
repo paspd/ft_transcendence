@@ -1,0 +1,24 @@
+@import '../../components/styles/theme.css';
+
+.home-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-container h1 {
+    color: white;
+    margin: 5rem;
+}
+
+.home-container a {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--home-btn-login-bg-color);
+    color: var(--home-btn-login-text-color);
+}
+

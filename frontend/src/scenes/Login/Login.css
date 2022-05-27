@@ -1,0 +1,13 @@
+@import '../../components/styles/theme.css';
+
+.login-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h1 {
+    color: white;
+    margin: 5rem;
+}
